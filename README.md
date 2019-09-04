@@ -16,12 +16,13 @@ JMSDK 本身托管在 jcenter 上，故您只需要参见 app/build.gradle 下 d
 
 若出现编译不成功的情况，请在 app build.gradle 下添加
 
-``` buildscript {
-        repositories {
-            jcenter()
-        }
+```
+buildscript {
+    repositories {
+        jcenter()
     }
-    ```
+}
+```
 
 ## JMSDK 接口调用
 
