@@ -4,10 +4,6 @@ buildscript {
     repositories {
         google()
         jcenter()
-        // Just for test, this could be removed after jcenter approve commit
-        maven {
-            url  "https://dl.bintray.com/kaelluo/maven"
-        }
         
     }
     dependencies {
@@ -23,11 +19,6 @@ allprojects {
         mavenLocal()
         google()
         jcenter()
-
-        // Just for test, this could be removed after jcenter approve commit
-        maven {
-            url  "https://dl.bintray.com/kaelluo/maven"
-        }
         
     }
 }
