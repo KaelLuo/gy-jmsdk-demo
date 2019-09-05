@@ -36,11 +36,11 @@ public class DemoMainActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        initViews();
         activity = this;
         JMSDK.INSTANCE.setDebug(true);
         JMSDK.INSTANCE.setLogLevel(Log.VERBOSE);
-        JMSDK.INSTANCE.onCreate(activity, savedInstanceState);
-        initViews();
+        JMSDK.INSTANCE.onCreate(this, savedInstanceState);
     }
 
     private void initJM(){
@@ -168,8 +168,6 @@ public class DemoMainActivity extends Activity implements View.OnClickListener {
         findViewById(R.id.jm_logout).setOnClickListener(this);
         findViewById(R.id.jm_exit).setOnClickListener(this);
     }
-
-
 
 
 }
